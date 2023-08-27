@@ -1,9 +1,9 @@
 ﻿using SurveyAPI.Model;
-using SurveyAPI.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SurveyAPI.DataLayer;
 
 namespace SurveyAPI.Business
 {
@@ -11,13 +11,13 @@ namespace SurveyAPI.Business
     {
         public Survey GetSurveyDetails(SurveyRequestModel surveyRequestModel)
         {
-            Survey survey = new DBOperatons().GetSurvey(surveyRequestModel);
+            Survey survey = new DBOperations().GetSurvey(surveyRequestModel);
             return survey;
         }
 
         public bool InsertOrUpdateSurvey(Survey survey)
         {
-            bool IsTransactionSuccessful = new DBOperatons().InsertOrUpdateSurvey(survey);
+            bool IsTransactionSuccessful = new DBOperations().InsertOrUpdateSurvey(survey);
             return IsTransactionSuccessful;
         }
     }

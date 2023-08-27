@@ -1,4 +1,4 @@
-﻿using SurveyAPI.Data;
+﻿using SurveyAPI.DataLayer;
 using SurveyAPI.Model;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ namespace SurveyAPI.Business
     {
         public bool IsAuthenticatedUser(User _user)
         {
-            return new DBOperatons().ValidateCredentials(_user.UserName, _user.UserPassword);
+            return new DBOperations().ValidateCredentials(_user.UserName, _user.UserPassword);
         }
     }
 }

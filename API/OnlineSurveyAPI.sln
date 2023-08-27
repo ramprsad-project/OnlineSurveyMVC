@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.33919.361
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{37870145-4496-4923-BCF2-74B9523BDF1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "..\OnlineSurveyUI\Online Survey\UI.csproj", "{3F02F514-E803-4ACE-8EC0-897197C9511A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{37870145-4496-4923-BCF2-74B9523BDF1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37870145-4496-4923-BCF2-74B9523BDF1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37870145-4496-4923-BCF2-74B9523BDF1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F02F514-E803-4ACE-8EC0-897197C9511A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F02F514-E803-4ACE-8EC0-897197C9511A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F02F514-E803-4ACE-8EC0-897197C9511A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F02F514-E803-4ACE-8EC0-897197C9511A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

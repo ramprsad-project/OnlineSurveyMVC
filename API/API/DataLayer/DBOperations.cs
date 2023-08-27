@@ -24,7 +24,6 @@ namespace SurveyAPI.DataLayer
                     {
                         cmd.Parameters.AddWithValue(arg.Key, arg.Value);
                     }
-
                     connection2.Open();
                     cmd.CommandType = CommandType.StoredProcedure;
                     dataReader = cmd.ExecuteReader();

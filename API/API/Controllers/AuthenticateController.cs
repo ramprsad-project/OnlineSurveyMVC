@@ -1,13 +1,11 @@
-﻿using System;
+﻿using SurveyAPI.Business;
+using SurveyAPI.Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace API.Controllers
 {
-    public class AuthenticationController : ApiController
+    public class AuthenticateController : ApiController
     {
         // GET: api/Authentication
         public IEnumerable<string> Get()
@@ -22,8 +20,9 @@ namespace API.Controllers
         }
 
         // POST: api/Authentication
-        public void Post([FromBody]string value)
+        public bool ValidateUser([FromBody]User user)
         {
+            return new UserAuthentication().IsAuthenticatedUser(user);
         }
 
         // PUT: api/Authentication/5

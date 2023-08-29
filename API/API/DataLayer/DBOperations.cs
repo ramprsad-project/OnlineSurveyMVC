@@ -160,7 +160,7 @@ namespace SurveyAPI.DataLayer
                 InsertData.CommandType = CommandType.StoredProcedure;
 
                 InsertData.Parameters.AddWithValue("@UserName", user.UserName);
-                InsertData.Parameters.AddWithValue("@UserPassword", user.UserPassword);
+                InsertData.Parameters.AddWithValue("@UserPassword", user.Password);
 
                 var outparameter = new SqlParameter
                 {

@@ -11,7 +11,7 @@ namespace SurveyAPI.Business
     {
         public bool IsAuthenticatedUser(User _user)
         {
-            return new DBOperations().ValidateCredentials(_user.UserName, _user.UserPassword);
+            return new DBOperations().ValidateCredentials(_user.UserName, _user.Password);
         }
     }
 }

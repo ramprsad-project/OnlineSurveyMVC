@@ -1,4 +1,5 @@
-﻿using SurveyAPI.Model;
+﻿using SurveyAPI.Business;
+using SurveyAPI.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,8 +38,7 @@ namespace API.Controllers
         // GET: Search/Create
         public bool InserOrUpdateSurvey([FromBody]Survey survey)
         {
-            // bool IsTrasactionSuccesful = new SurveyOperations().InsertOrUpdateSurvey(survey);
-            return true; 
+             return new SurveyOperations().InsertOrUpdateSurvey(survey);
         }
 
         // PUT: api/Survey/5
